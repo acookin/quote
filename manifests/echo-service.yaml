@@ -41,5 +41,5 @@ metadata:
   namespace: default
 spec:
   hostname: '*'
-  prefix: /backend/
+  prefix: /echo-backend/
   service: echo-server
