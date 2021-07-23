@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: echo-server
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -23,6 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: echo-server
+  namespace: default
 spec:
   ports:
     - name: http-port
@@ -36,6 +38,7 @@ apiVersion: x.getambassador.io/v3alpha1
 kind: AmbassadorMapping
 metadata:
   name: echo-server
+  namespace: default
 spec:
   hostname: '*'
   prefix: /backend/
