@@ -8,6 +8,9 @@ spec:
   hostname: "*"
   prefix: /backend/
   service: quote
+  retry_policy:
+    retry_on: 5xx
+    per_try_timeout: 5ms
 ---
 apiVersion: v1
 kind: Service

@@ -6,6 +6,8 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    hi: bye
   name: echo-server
   namespace: echo
 spec:
