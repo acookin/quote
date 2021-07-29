@@ -57,6 +57,8 @@ kind: AmbassadorMapping
 metadata:
   name: echo-server-other
   namespace: echo
+  labels:
+    hi: bye
 spec:
   hostname: '*'
   prefix: /echo-other/
