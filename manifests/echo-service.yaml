@@ -51,3 +51,14 @@ spec:
   prefix: /echo-backend/
   service: echo-server
 
+---
+apiVersion: x.getambassador.io/v3alpha1
+kind: AmbassadorMapping
+metadata:
+  name: echo-server-other
+  namespace: echo
+spec:
+  hostname: '*'
+  prefix: /echo-other/
+  service: echo-server
+
