@@ -46,6 +46,6 @@ metadata:
   namespace: echo
 spec:
   hostname: '*'
-  prefix: /other-echo/
+  prefix: /other-echo-server/
   service: other-echo-server
 
